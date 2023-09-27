@@ -2,12 +2,71 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hello World</title>
+    <title>六個大按鈕</title>
+    <style>
+        body {
+            margin: 0;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            height: 100vh;
+            justify-content: center;
+            align-items: center;
+            font-family: Arial, sans-serif;
+        }
+        .btn-container {
+            display: flex;
+            flex-wrap: wrap;
+            width: 100vw;
+            justify-content: space-around;
+        }
+        .btn {
+            width: calc(50% - 20px);
+            height: 33.33vh;
+            font-size: 24px;
+            border: none;
+            cursor: pointer;
+            transition: transform 0.2s;
+            box-shadow: 0 8px 16px rgba(0,0,0,0.1);
+            margin: 10px;
+            border-radius: 15px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+        .btn:active {
+            transform: scale(0.95);
+        }
+        .btn-a {
+            background-color: #FF5733;
+        }
+        .btn-b {
+            background-color: #33FF57;
+        }
+        .btn-c {
+            background-color: #5733FF;
+        }
+        .btn-d {
+            background-color: #FF33C4;
+        }
+        .btn-e {
+            background-color: #C433FF;
+        }
+        .btn-f {
+            background-color: #33C4FF;
+        }
+    </style>
 </head>
 <body>
-    <h1>Hello World!</h1>
-    <p>歡迎來到我的網頁！</p>
+    <div class="btn-container">
+        <button class="btn btn-a">A</button>
+        <button class="btn btn-b">B</button>
+        <button class="btn btn-c">C</button>
+        <button class="btn btn-d">D</button>
+        <button class="btn btn-e">E</button>
+        <button class="btn btn-f">F</button>
+    </div>
 </body>
 </html>
-
