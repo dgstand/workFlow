@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>六個大按鈕</title>
+    <title>六個連結按鈕</title>
     <style>
         body {
             margin: 0;
@@ -35,6 +35,8 @@
             display: flex;
             justify-content: center;
             align-items: center;
+            text-decoration: none;
+            color: white;
         }
         .btn:active {
             transform: scale(0.95);
@@ -61,12 +63,12 @@
 </head>
 <body>
     <div class="btn-container">
-        <button class="btn btn-a">A</button>
-        <button class="btn btn-b">B</button>
-        <button class="btn btn-c">C</button>
-        <button class="btn btn-d">D</button>
-        <button class="btn btn-e">E</button>
-        <button class="btn btn-f">F</button>
+        <a href="https://www.google.com" class="btn btn-a">A</a>
+        <a href="https://www.facebook.com" class="btn btn-b">B</a>
+        <a href="https://www.twitter.com" class="btn btn-c">C</a>
+        <a href="https://www.youtube.com" class="btn btn-d">D</a>
+        <a href="https://www.instagram.com" class="btn btn-e">E</a>
+        <a href="https://script.google.com/macros/s/AKfycbw4TFo4RycZmHVeBFw6ctEEdQG6l16nMrNtAN3x-Ys/dev" class="btn btn-f">F</a>
     </div>
 </body>
 </html>
